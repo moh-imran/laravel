@@ -18,6 +18,4 @@ Route::get('/', function () {
 });
 
 
-Route::group(['middleware' => 'web'], function(){
-    Route::get('pay', 'App\Http\Controllers\PayOrderController@store');
-});
+Route::get('pay', 'PayOrderController@store');
